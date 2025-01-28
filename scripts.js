@@ -90,9 +90,9 @@ function collisionDetection() {
       const b = bricks[c][r];
       if (b.status === 1) {
         if (
-          x > b.x*5 &&
+          x > b.x &&
           x < b.x + brickWidth &&
-          y > b.y*5 &&
+          y > b.y &&
           y < b.y + brickHeight
         ) {
           dy = -dy;
